@@ -1,0 +1,18 @@
+WebSirenAgent Installation & Configuration
+1.  Apache AMQ should be up and running on WebSiren(webapp https://github.com/SWASTeam/WebSiren).
+2.	Extract WebSirenAgent.tar in your modsecurity firewall is configured.
+3.	Before starting WebSirenAgent, open conf/config.properties in agent’s directory.
+a.	Set your sytem’s IP and port where WebSiren and apache AMQ is configured in Connection property.
+e.g Connection=tcp://192.168.0.1:616164
+
+b.	Set the path of your modsecurity configuration file in MSConfigFile property
+e.g MSConfigFile=/etc/httpd/conf.d/modsecurity.conf
+
+c.	Set the path of directory where you copy your modsecurity rule files in RuleFileDir property.
+e.g RuleFileDir=/etc/httpd/conf.d
+
+d.	Set the path of the audit log file of your modsecurity in AuditLogsFilePath property.
+e.g AuditLogsFilePath=/var/log/modsec_audit.log
+
+4.	Run start-agent.sh.   
+2.	Web Siren Machine (Windows 7 as OS)
