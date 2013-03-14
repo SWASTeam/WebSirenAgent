@@ -631,11 +631,10 @@ to attach them to the start of each source file to most effectively
 state the exclusion of warranty; and each file should have at least
 the "copyright" line and a pointer to where the full notice is found.
 
-    WebSiren is a semantic based rule explorer for web application
-    firewall rules. Currently it supports modsecurity rules. It 
-    provides with the facility of maintain rule repository, search 
-    rules, classify rules into groups, manage resource based rules 
-    and modsecurity configuration management. 
+    WebSirenAgent is a daemon program that runs on a modseccurity machine
+    passively. It listens and process to request coming from WebSiren(webapp)
+    for modsecurity management. It also sends audit events triggered by a
+    modsecurity rules to Websiren(webapp) for monitoring and log analysis.
     Copyright (C) <2013> SWAS(Semantic Web Application Security) Team, NUST.
 
     This program is free software: you can redistribute it and/or modify
@@ -656,10 +655,10 @@ Also add information on how to contact you by electronic and paper mail.
   If the program does terminal interaction, make it output a short
 notice like this when it starts in an interactive mode:
 
-    WebSiren Copyright (C) 2013  SWAS(Semantic Web Application Security) Team, NUST.
-    This program comes with ABSOLUTELY NO WARRANTY; for details type `show w'.
-    This is free software, and you are welcome to redistribute it
-    under certain conditions; type `show c' for details.
+    WebSirenAgent Copyright (C) 2013  SWAS(Semantic Web Application Security) 
+    Team, NUST. This program comes with ABSOLUTELY NO WARRANTY; for details
+    type `show w'.This is free software, and you are welcome to redistribute 
+    it under certain conditions; type `show c' for details.
 
 The hypothetical commands `show w' and `show c' should show the appropriate
 parts of the General Public License.  Of course, your program's commands
